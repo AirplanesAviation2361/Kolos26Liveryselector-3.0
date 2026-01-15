@@ -1,10 +1,10 @@
 # <img width="20" height="40" alt="logosmall" src="https://raw.githubusercontent.com/kolos26/GEOFS-LiverySelector/main/liveryselector-logo-small.svg" /> GeoFS LiverySelector用户手册
 您好，欢迎使用GeoFS LiverySelector插件！在继续操作之前，请阅读以下内容，以确保顺利使用该插件。
 
-安装好相应的代码并启动 GeoFS 后，您会在“飞机”标志小菜单右侧底部看到一个按钮。点击此按钮即可访问该插件。
+安装好相应的代码并启动 GeoFS 后，您会在“飞机”标志小菜单右侧底部看到一个<img width="15" height="30" alt="logosmall" src="https://raw.githubusercontent.com/kolos26/GEOFS-LiverySelector/refs/heads/main/liveryselector-logo-small.svg" />按钮。点击此按钮即可访问该插件。
 
 飞机选择菜单中还会出现一些图标……
-* <img width="15" height="30" alt="logosmall" src="https://raw.githubusercontent.com/kolos26/GEOFS-LiverySelector/refs/heads/main/logosmall.png" />图标表示该飞机支持此插件。
+* <img width="15" height="30" alt="logosmall" src="https://raw.githubusercontent.com/kolos26/GEOFS-LiverySelector/refs/heads/main/liveryselector-logo-small.svg" />图标表示该飞机支持此插件。
 * 🎮表示该飞机与多人游戏兼容（装了插件的玩家，他们可以看到您使用的涂装）。
 * 🥇、🥈或🥉表示该涂装曾赢得过在我们在Discord上举行的涂装比赛。
 
