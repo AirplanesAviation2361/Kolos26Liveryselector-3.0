@@ -3,7 +3,7 @@
     <a target="_blank" href="https://discord.gg/2tcdzyYaWU"><img src="https://dcbadge.limes.pink/api/server/2tcdzyYaWU" alt="https://discord.gg/2tcdzyYaWU" /></a><br />
     <a href="https://github.com/kolos26/GEOFS-LiverySelector/releases/latest"><img alt="Release Badge" src="https://img.shields.io/github/release/kolos26/GEOFS-LiverySelector?style=flat-square&color=light-green"></a> <img alt="Stars Badge" src="https://img.shields.io/github/stars/kolos26/GEOFS-LiverySelector?style=flat-square&color=light-green"> <img alt="Watcher Badge" src="https://img.shields.io/github/watchers/kolos26/GEOFS-LiverySelector?style=flat-square&color=light-green"><br />
 </p>
-The GeoFS LiverySelector is a unified livery handler add-on designed for [GeoFS](https://www.geo-fs.com), containing hundreds of liveries and a feature-packed user interface to improve performance and accessibility. In the list of liveries, you can find:
+The GeoFS LiverySelector is a unified livery handler add-on designed for <a href="http://www.geo-fs.com/">GeoFS</a>, containing hundreds of liveries and a feature-packed user interface to improve performance and accessibility. In the list of liveries, you can find:
 
 - Liveries from Spice9's well-known [GeoFS Multiliveries](https://github.com/Spice9/Geofs-Multiliveries),
 - Liveries from Ariakim Taiyo's [LiveryChanger](https://github.com/Ariakim-Taiyo/LiveryChanger),
@@ -39,7 +39,7 @@ This method only needs to be done once. After that, the add-on should work autom
 You can use LiverySelector without installation, or you can add it to your Tampermonkey browser addon.
 
 ## Virtal Airlines
-Since LiverySelector 3.2.0, you can link your own copy of [airline.json](https://github.com/kolos26/GEOFS-LiverySelector/blob/main/airline.json) to have an easily shareable database of custom liveries.
+Since LiverySelector 3.2.0, you can create your own copy of [airline.json](https://github.com/kolos26/GEOFS-LiverySelector/blob/main/airline.json) to have an easily shareable database of custom liveries.
 You can add an airline by clicking on **+ Add Airline** button, and you can always remove it by clicking the **- Remove Airline** button. The airline.json is being synced each time you load geofs, the list of subscribed airlines are saved locally and being kept from game to game.
 Due to security reasons, these liveries are not visible in multiplayer mode by default. If you would like to make your liveries visible, please contact us on [discord](https://discord.gg/2tcdzyYaWU) to verify your airline and put it on the whitelist. The owner of the airline.json is responsible for ALL CONTENT displayed on the liveries!
 
