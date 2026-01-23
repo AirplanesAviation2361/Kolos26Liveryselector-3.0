@@ -1211,7 +1211,13 @@ window.LiverySelector = {
     togglePanel,
 	log,
 	potatoSearch,
-
+{
+  "airline": "FLY HONG KONG",
+  "icao": "FHK",
+  "aircraft": "B787-9",
+  "registration": "B-HKH",
+  "texture": "https://yourcdn.com/flyhongkong_7879.png"
+}
 fetch("https://yourcdn.com/flyhongkong_7879.json")
   .then(r => {
     if (!r.ok) throw new Error("Failed to load Fly Hong Kong JSON");
@@ -1226,3 +1232,4 @@ fetch("https://yourcdn.com/flyhongkong_7879.json")
     }
   })
   .catch(err => console.error("Fly Hong Kong error ", err));
+
