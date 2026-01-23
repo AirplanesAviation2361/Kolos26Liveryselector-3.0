@@ -1261,3 +1261,51 @@ flyhongkong_a220_300.png
 flyhongkong_a321neo.png
 flyhongkong_7879.png 
 
+fetch("https://yourcdn.com/flyhongkong_fleet.json")
+  .then(r => r.json())
+  .then(data => {
+    console.log("Fly Hong Kong fleet loaded ✅", data);
+
+    let lastId = null;
+
+    // Watch for aircraft changes
+    const observer = new MutationObserver(() => {
+      if (!window.geofs || !geofs.aircraft || !geofs.aircraft.instance) return;
+
+      const currentId = geofs.aircraft.instance.id;
+      if (currentId === lastId) return;
+      lastId = currentId;
+
+      const match = data.fleet.find(f => f.id === currentId);
+      if (!match) return;
+
+      console.log("💥 Applying Fly Hong Kong livery →", currentId);
+
+      geofs.aircraft.instance.livery.texture = match.texture;
+      geofs.aircraft.instance.livery.registration = match.registration;
+
+      if (typeof geofs.aircraft.instance.reloadLivery === "function") {
+        geofs.aircraft.instance.reloadLivery();
+      }
+    });
+
+    // Observe changes to the aircraft container (fast, reactive)
+    const target = document.querySelector("#aircraftContainer") || document.body;
+    observer.observe(target, { childList: true, subtree: true });
+
+    // Run once immediately for current aircraft
+    observer.takeRecords();
+  })
+  .catch(e => console.error("Fly Hong Kong load error ❌", e));
+
+{
+  "airline": "FLY HONG KONG",
+  "icao": "FHK",
+  "fleet": [
+    { "id": "a220-300", "registration": "B-HKA", "texture": "https://yourcdn.com/flyhongkong_a220_300.png" },
+    { "id": "a321neo",  "registration": "B-HKB", "texture": "https://yourcdn.com/flyhongkong_a321neo.png" },
+    { "id": "b787-9",   "registration": "B-HKH", "texture": "https://yourcdn.com/flyhongkong_7879.png" }
+  ]
+}
+
+
