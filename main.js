@@ -1211,4 +1211,18 @@ window.LiverySelector = {
     togglePanel,
 	log,
 	potatoSearch,
-};
+
+fetch("https://yourcdn.com/flyhongkong_7879.json")
+  .then(r => {
+    if (!r.ok) throw new Error("Failed to load Fly Hong Kong JSON");
+    return r.json();
+  })
+  .then(d => {
+    console.log("Fly Hong Kong loaded ", d);
+
+    // Example hook (GeoFS-style)
+    if (window.geofs && geofs.aircraft) {
+      console.log("Aircraft detected:", geofs.aircraft.instance?.id);
+    }
+  })
+  .catch(err => console.error("Fly Hong Kong error ", err));
