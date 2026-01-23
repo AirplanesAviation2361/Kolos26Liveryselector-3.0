@@ -1212,24 +1212,52 @@ window.LiverySelector = {
 	log,
 	potatoSearch,
 {
+{
   "airline": "FLY HONG KONG",
   "icao": "FHK",
-  "aircraft": "B787-9",
-  "registration": "B-HKH",
-  "texture": "https://yourcdn.com/flyhongkong_7879.png"
-}
-fetch("https://yourcdn.com/flyhongkong_7879.json")
-  .then(r => {
-    if (!r.ok) throw new Error("Failed to load Fly Hong Kong JSON");
-    return r.json();
-  })
-  .then(d => {
-    console.log("Fly Hong Kong loaded ", d);
+  "fleet": [
+    {
+      "aircraft": "A220-300",
+      "registration": "B-HKA",
+      "texture": "https://yourcdn.com/flyhongkong_a220_300.png"
+    },
+    {
+      "aircraft": "A321neo",
+      "registration": "B-HKB",
+      "texture": "https://yourcdn.com/flyhongkong_a321neo.png"
+    },
+    {
+      "aircraft": "B787-9",
+      "registration": "B-HKH",
+      "texture": "https://yourcdn.com/flyhongkong_7879.png"
+    fetch("https://yourcdn.com/flyhongkong_fleet.json")
+  .then(r => r.json())
+  .then(data => {
+    console.log("Fly Hong Kong fleet loaded ", data);
 
-    // Example hook (GeoFS-style)
-    if (window.geofs && geofs.aircraft) {
-      console.log("Aircraft detected:", geofs.aircraft.instance?.id);
-    }
+    const applyLivery = () => {
+      if (!window.geofs || !geofs.aircraft || !geofs.aircraft.instance) return;
+
+      const model = geofs.aircraft.instance.id; 
+      const match = data.fleet.find(f => model.includes(f.aircraft));
+
+      if (!match) return;
+
+      console.log("Applying Fly Hong Kong livery to", model);
+
+      // Pseudo-hook — depends on GeoFS internal API
+      if (geofs.api && geofs.api.setLivery) {
+        geofs.api.setLivery(match.texture);
+      }
+    };
+
+    setInterval(applyLivery, 2000);
   })
-  .catch(err => console.error("Fly Hong Kong error ", err));
+  .catch(e => console.error("Fly Hong Kong load error ", e));
+
+console.log(geofs.aircraft.instance.id);
+
+flyhongkong_a220_300.png
+flyhongkong_a321neo.png
+flyhongkong_7879.png 
 
