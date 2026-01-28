@@ -4,7 +4,8 @@
     "airline": "Fly Hong Kong",
     "livery": "Standard Yellow/Black",
     "texture": "https://raw.githack.com/YourUsername/YourRepo/main/FlyHongKong_A220-300.png",
-    "author": "YourName",
+    "thumbnail": https//rawgithubusercontent/Airplanesaviation2361/geofs-flyhongkong-livery/main/thumb_fhk_A220-300png",
+    "author": "airplanesaviation2361",
     "description": "Yellow fuselage, black engines, black titles, white underside",
     "year": 2026
   },
@@ -13,7 +14,8 @@
     "airline": "Fly Hong Kong",
     "livery": "Standard Yellow/Black",
     "texture": "https://raw.githack.com/YourUsername/YourRepo/main/FlyHongKong_787-9.png",
-    "author": "YourName",
+    "thumbnail": https//rawgithubusercontent/Airplanesaviation2361/geofs-flyhongkong-livery/main/thumb_fhk_7879png",
+    "author": "airplanesaviation2361",
     "description": "Yellow fuselage, black engines, black titles, white underside",
     "year": 2026
   },
@@ -22,6 +24,7 @@
     "airline": "Fly Hong Kong",
     "livery": "Standard Yellow/Black",
     "texture": "https://raw.githack.com/YourUsername/YourRepo/main/FlyHongKong_A321neo.png",
+    "thumbnail": https//rawgithubusercontent/Airplanesaviation2361/geofs-flyhongkong-livery/main/thumb_fhk_A321neopng",
     "author": "YourName",
     "description": "Yellow fuselage, black engines, black titles, white underside",
     "year": 2026
@@ -37,10 +40,12 @@
       "icao": "FPK",
       "registration": "AP-FPK",
       "texture": "https://raw.githubusercontent.com/airplanesaviation23611/geofs-flyhongkong-livery/main/flypakistan_777.png"
+      "thumbnail": https//rawgithubusercontent/Airplanesaviation2361/geofs-flypakistan-livery/main/thumb_flypakistan_777png"
     }
   ],
   "labels": [
     "Texture"
   ]
 }
+
 
