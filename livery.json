@@ -27,3 +27,20 @@
     "year": 2026
   }
 ]
+"777": {
+  "name": "BOEING 777-300ER",
+  "liveries": [
+    {
+      "id": "FPK-777",
+      "name": "FLY PAKISTAN",
+      "airline": "FLY PAKISTAN",
+      "icao": "FPK",
+      "registration": "AP-FPK",
+      "texture": "https://raw.githubusercontent.com/airplanesaviation23611/geofs-flyhongkong-livery/main/flypakistan_777.png"
+    }
+  ],
+  "labels": [
+    "Texture"
+  ]
+}
+
