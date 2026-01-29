@@ -1308,4 +1308,9 @@ fetch("https://yourcdn.com/flyhongkong_fleet.json")
   ]
 }
 
+const flightList = [
+  // other flights already here
 
+  ["Fly Pakistan", "AMD", "ISB"],
+  ["Fly Hong Kong", "DOH", "HKG"],
+];
